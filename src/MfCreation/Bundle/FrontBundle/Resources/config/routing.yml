@@ -1,0 +1,3 @@
+mf_creation_front_homepage:
+    pattern:  /
+    defaults: { _controller: MfCreationFrontBundle:Default:index }

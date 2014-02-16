@@ -1,0 +1,12 @@
+mf_creation_common:
+    resource: "@MfCreationCommonBundle/Resources/config/routing.yml"
+    prefix:   /
+
+mf_creation_admin:
+    resource: "@MfCreationAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+mf_creation_front:
+    resource: "@MfCreationFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+

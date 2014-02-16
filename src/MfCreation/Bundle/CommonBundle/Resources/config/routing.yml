@@ -1,0 +1,3 @@
+mf_creation_common_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: MfCreationCommonBundle:Default:index }

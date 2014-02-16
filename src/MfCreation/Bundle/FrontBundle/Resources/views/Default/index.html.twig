@@ -1,0 +1,35 @@
+{% extends "MfCreationFrontBundle::layout.html.twig" %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/mfcreationfront/css/defaultIndex.css') }}" />
+{% endblock css %}
+
+{% block main_section %}
+<div class="main clearfix">
+        <div class="bb-custom-wrapper">
+                <h3>Exemples</h3>
+                <div id="bb-bookblock" class="bb-bookblock">
+                    <div class="bb-previous-picture"></div>
+                    <div class="bb-next-picture"></div>
+                    {% for i in 1..5 %}
+                        <div class="bb-item">
+                            <a href="#"><img src="{{ asset('bundles/mfcreationfront/images/ville'~i~'.jpg') }}" alt="image0{{ i }}"/></a>
+                        </div>
+                    {% endfor %}
+                </div>
+                <nav>
+                    <a id="bb-nav-play" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Play</a>
+                    <a id="bb-nav-stop" href="#" class="bb-custom-icon bb-custom-icon-stop">Stop</a>
+                    <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                    <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                </nav>
+        </div>
+</div>
+{% endblock main_section %}
+
+{% block footer_js %}
+    {% javascripts
+        '@MfCreationFrontBundle/Resources/public/js/defaultIndex.js' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock footer_js %}

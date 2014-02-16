@@ -1,0 +1,7 @@
+parameters:
+#    mf_creation_common.example.class: MfCreation\Bundle\CommonBundle\Example
+
+services:
+#    mf_creation_common.example:
+#        class: %mf_creation_common.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
